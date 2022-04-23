@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    background: #162831;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+
+.container {
+    max-width: 1296px;
+    width: 98%;
+    margin: auto;
+}
+
+.header, .menu {
+    display: flex;
+}
+
+.header {
+    min-height: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    color: #fff;
+    gap: 50px;
+    font-size: 14px;
+}
+
+.first__logo {
+    margin-left: 50px;
+}
+
+/* slider1 */
+.slider__title {
+    font-size: 64px;
+
+}
+
+.slider__info {
+    font-size: 24px;
+    margin: 136px 0 40px;
+}
+
+.slider__info::before {
+    padding: 66px;
+    content: url(../images/Rectangle\ 3.png);
+}
+
+.slider__info::after {
+    padding: 66px;
+    content: url(../images/Rectangle\ 5.png);
+}
+
+.slider .slick-list {
+    overflow: hidden;
+}
+
+.slider .slick-track {
+    display: flex;
+}
+
+
+.slider .slider__item {
+    text-align: center;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.slider .slider__item:nth-of-type(1) {
+    background-image: url(../images/slide1.png);
+}
+
+.slider .slider__item:nth-of-type(2) {
+    background-image: url(../images/slide2.webp);
+}
+
+.slider .slider__item:nth-of-type(3) {
+    background-image: url(../images/slide3.jpg);
+}
+
+.slider .slider__item:nth-of-type(4) {
+    background-image: url(../images/slide4.jpg);
+}
+
+/* grid */
+.services {
+    margin-bottom: 150px;
+}
+
+.services__title {
+    /* margin-bottom: 100px; */
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    color: #FFFFFF;
+}
+
+.services__title-1 {
+    bottom: 45px;
+}
+
+.services__cards {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "s1 s2 s3"
+        "s1 s4 s5";
+    min-height: 540px;
+}
+
+.services__card {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/services.png);
+}
+
+.services__card-1 {
+    grid-area: s1;
+    border-bottom: 10px solid #018ABE;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.services__card-2 {
+    grid-area: s2;
+}
+
+.services__card-3 {
+    grid-area: s3;
+}
+
+.services__card-4 {
+    grid-area: s4;
+}
+
+.services__card-5 {
+    grid-area: s5;
+}
+
+
+/* grid */
+/* btn first */
+.first__btn {
+    margin-right: 10px;
+}
+
+.blue-btn {
+    width: 150px;
+    height: 35px;
+    background-color: #018ABE;
+    color: #FFFFFF;
+    border: none;
+}
+
+/*  */
+.review .slick-list {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.review .slick-track {
+    display: flex;
+    gap: 30px;
+}
+
+.review {
+    margin-bottom: 150px;
+}
+
+.review__item {
+    opacity: .4;
+    transform: scale(.9); /* масштабирование */
+    transition: 1s;
+}
+
+.part {
+    width: 636px;
+    min-height: 276px;
+    padding: 40px 45px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    color: #FFFFFF;
+
+}
+
+@media(max-width: 700px) {
+    .part {
+        width: 100%;
+    }
+    .review .slick-track {
+        gap: 0px;
+    }
+}
+
+.review__item.slick-center {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.review__persone {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.review__info {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.review .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.review .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    opacity: 0.4;
+    border-radius: 3px;
+}
+
+.review .slick-active button {
+    opacity: 1;
+}
+
+
+/* .review__info:nth-of-type(1) */
+
+/* about str */
+.about__title{
+    text-align: center;
+    margin-bottom: 100px;
+    color: #FFFFFF;
+}
+.about__tabl{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+}
+.about__info{
+    color: #FFFFFF;
+    line-height: 20px;
+    padding-right: 36px;
+}
+.about__caption{
+    margin-bottom: 30px;
+}
+.about__img{
+    width: 526px;
+    height: 365px;
+    background-image: url(../images/about_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* about end */
