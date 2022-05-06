@@ -189,7 +189,8 @@ ul, ol, li {
 
 .review__item {
     opacity: .4;
-    transform: scale(.9); /* масштабирование */
+    transform: scale(.9);
+    /* масштабирование */
     transition: 1s;
 }
 
@@ -207,6 +208,7 @@ ul, ol, li {
     .part {
         width: 100%;
     }
+
     .review .slick-track {
         gap: 0px;
     }
@@ -252,30 +254,167 @@ ul, ol, li {
 /* .review__info:nth-of-type(1) */
 
 /* about str */
-.about__title{
+.about {
+    margin-bottom: 150px;
+}
+
+.about__title {
     text-align: center;
     margin-bottom: 100px;
     color: #FFFFFF;
 }
-.about__tabl{
+
+.about__tabl {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, 1fr);
     row-gap: 24px;
 }
-.about__info{
+
+.about__info {
     color: #FFFFFF;
     line-height: 20px;
     padding-right: 36px;
+
 }
-.about__caption{
+
+.about__caption {
     margin-bottom: 30px;
 }
-.about__img{
+
+.about__text {
+    font-size: 16px;
+}
+
+.about__img {
     width: 526px;
     height: 365px;
     background-image: url(../images/about_img.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 100px;
 }
+
+
 /* about end */
+/* price str */
+.price {
+    color: #FFFFFF;
+    margin-bottom: 150px;
+}
+
+.price__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.price__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price__list {
+    font-size: 18px;
+    line-height: 65px;
+}
+
+.price__list li {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    position: relative;
+}
+
+.price__list li::before {
+    content: url(../images/blueleaf.png);
+    position: absolute;
+    left: -38px;
+}
+
+.price__img {
+    margin-bottom: 30px;
+}
+
+.price__subtitle {
+    text-align: center;
+}
+
+/* price end */
+
+/* map str */
+.maps__map{
+    width: 820px;
+    height: 540px;
+    border-radius: 10px;
+}
+/* map end */
+/* location str */
+.maps__info{
+    display: flex;
+    justify-content: space-between;
+}
+.maps__next{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1;
+}
+.location{
+    width: 382px;
+    height: 250px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    line-height: 41px;
+    padding: 30px 45px;
+    color: #FFFFFF;
+}
+.loc__1::before{
+    content: url(../images/map1.png);
+    padding-right: 23px;
+}
+.loc__2::before{
+    content: url(../images/car2.png);
+    padding-right: 23px;
+}
+.loc__3::before{
+    content: url(../images/record.png);
+    padding-right: 23px;
+}
+.loc__btn{
+    width: 155px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    color: #018ABE;
+}
+/* location end */
+/* ocatiob str */
+.ocation{
+    width: 382px;
+    height: 250px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    line-height: 41px;
+    padding: 30px 45px;
+    color: #FFFFFF;
+}
+.oc__1::before{
+    content: url(../images/map1.png);
+    padding-right: 23px;
+}
+.oc__2::before{
+    content: url(../images/car2.png);
+    padding-right: 23px;
+}
+.oc__3::before{
+    content: url(../images/record.png);
+    padding-right: 23px;
+}
+.oc__btn{
+    width: 155px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    color: #018ABE;
+}
+/*  ocation end */

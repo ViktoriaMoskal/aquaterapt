@@ -31,3 +31,12 @@ $(document).ready(function () {
     })
 })
 
+"use strict"
+let map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 50.272796, lng: 30.31428 },
+        zoom: 8
+    })
+}
+

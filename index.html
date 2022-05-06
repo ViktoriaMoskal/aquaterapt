@@ -11,6 +11,9 @@
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script defer src="./srcipt/slick.min.js"></script>
     <script defer src="./srcipt/index.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"></script>
+    <script defer src="./scripts/index.js"></script>
 </head>
 
 <body>
@@ -165,10 +168,12 @@
             <div class="about__tabl">
                 <div class="about__info">
                     <h3 class="about__caption">RitmStyle массаж </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed
+                        tellus eget mattis
                         nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam
-                        nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
-                        Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet
+                        nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing. </p> <br>
+                    <p class="about__text">Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst
+                        quam. Felis amet
                         diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at
                         tempor.</p>
                 </div>
@@ -179,20 +184,60 @@
 
                 </div>
                 <div class="about__info">
-                    <h3  class="about__caption">RitmStyle гидротерапия</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra
+                    <h3 class="about__caption">RitmStyle гидротерапия</h3>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a
+                        non ut viverra
                         turpis eget. Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque etiam.
                         Eros arcu, pulvinar penatibus luctus ridiculus sagittis vel nunc hac. Nisi, diam tincidunt dui
                         viverra. Eget quis ultricies sem nunc risus senectus luctus ultricies. Enim feugiat pharetra
-                        pharetra et. <br>
-                        Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie. Ipsum nisi
+                        pharetra et. </p>
+                    <br>
+                    <p class="about__text">Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare
+                        molestie. Ipsum
+                        nisi
                         id sed tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id vel massa
                         tincidunt. Hendrerit blandit in augue vel mi quam magna egestas. Fringilla ac lacus viverra
                         ullamcorper leo, enim vitae id aliquam. Magna sed tristique tellus enim, netus tempor at elit
                         dui. Ullamcorper hendrerit feugiat libero tellus diam egestas dui tellus odio.</p>
                 </div>
             </div>
-
+        </section>
+        <section class="price">
+            <h2 class="price__title">Стоимость сеансов</h2>
+            <div class="price__box">
+                <div class="price__list">
+                    <li><span>RitmStyle с погружением</span> <span>1000р.</span></li>
+                    <li><span> Абонемент на RitmStyle</span> <span>5500р.</span></li>
+                    <li><span> RitmStyle для пар</span> <span>6000р.</span></li>
+                    <li><span> RitmStyle для беременных</span> <span>13500р.</span></li>
+                    <li><span> RitmStyle + фотосессия</span> <span>11500р.</span></li>
+                </div>
+                <div>
+                    <img class="price__img" src="./images/price.png" alt="">
+                    <h3 class="price__subtitle">Подарочный сертификат</h3>
+                </div>
+            </div>
+        </section>
+        <section class="maps">
+            <div class="maps__info">
+                <div class="maps__map" id="map"></div>
+                <div class="maps__next">
+                    <div class="location">
+                        <h3>Бассейн WorkClass</h3>
+                        <p class="loc__1">Невский 140</p>
+                        <p class="loc__2">м. Спасская</p>
+                        <p class="loc__3">Запись по договоренности</p>
+                        <button class="loc__btn">Записаться на сеанс</button>
+                    </div>
+                    <div class="ocation">
+                        <h3>Бассейн "На Гороховой"</h3>
+                        <p class="oc__1">Невский 140</p>
+                        <p class="oc__2">м. Спасская</p>
+                        <p class="oc__3">Запись по договоренности</p>
+                        <button class="oc__btn">Записаться на сеанс</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
